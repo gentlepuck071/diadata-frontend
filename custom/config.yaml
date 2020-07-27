@@ -1,0 +1,64 @@
+name: DIA Token Sale
+
+logoPath: './src/assets/img/logo.svg'
+
+templatePath: './src/html/index.html'
+
+tcr:
+  type: 'multi-tcr' # choices: multi-tcr | none
+  config:
+    lists:
+      - networkId: 1
+        listId: 1
+        contractAddress: '0x1854dae560abb0f399d8badca456663ca5c309d0'
+
+      - networkId: 4
+        contractAddress: '0x794c22E157B03327904aBb06a8830D6d19d82908'
+
+# Price estimation/orderbook graph
+dexPriceEstimator:
+  type: 'dex-price-estimator' # choices: dex-price-estimator
+  config:
+    - networkId: 1
+      url_production: https://dex-price-estimator.gnosis.io
+      url_develop: https://price-estimate-mainnet.dev.gnosisdev.com
+
+    - networkId: 4
+      url_production: https://dex-price-estimator.rinkeby.gnosis.io
+      url_develop: https://price-estimate-rinkeby.dev.gnosisdev.com
+
+# Subgraph abstraction, used for getting the last price
+theGraphApi:
+  type: 'the-graph' # choices: the-graph
+  config:
+    - networkId: 1
+      url: https://api.thegraph.com/subgraphs/name/gnosis/protocol
+
+    - networkId: 4
+      url: https://api.thegraph.com/subgraphs/name/gnosis/protocol-rinkeby
+
+# Eth node config
+defaultProviderConfig:
+  type: 'infura' # Choices: infura | url
+  config:
+    # It'll be appended to `infuraEndpoint`
+    infuraId: 607a7dfcb1ad4a0b83152e30ce20cfc5
+    infuraEndpoint: wss://mainnet.infura.io/ws/v3/
+  #
+  # Example for type `url`
+  # type: 'url'
+  # config:
+  #   ethNodeUrl: <local eth node>
+
+# Exchange contract config
+exchangeContractConfig:
+  type: 'contractBlock' # choices: contractBlock
+  config:
+    - networkId: 1
+      blockNumber: 9340147
+    - networkId: 4
+      blockNumber: 5844678
+
+# Wallet Connect
+walletConnect:
+  bridge: 'wss://safe-walletconnect.gnosis.io/'
