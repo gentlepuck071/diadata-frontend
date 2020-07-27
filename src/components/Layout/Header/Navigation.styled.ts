@@ -48,12 +48,12 @@ export const NavLinksWrapper = styled.div<{ $open?: boolean; $responsive: boolea
     }
 
     &:hover {
-      color: var(--color-text-active);
+      color: var(--color-text-selectedbutton);
       background: var(--color-background-nav-active);
     }
 
     &.active {
-      color: var(--color-text-active);
+      color: var(--color-text-selectedbutton);
       background: var(--color-background-nav-active);
       @media ${MEDIA.mobile} {
         background: #208dff;

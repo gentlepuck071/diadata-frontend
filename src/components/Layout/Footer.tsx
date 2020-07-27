@@ -9,7 +9,7 @@ import { depositApi } from 'api'
 import verified from 'assets/img/verified.svg'
 
 // Components
-import ThemeToggler from 'components/ThemeToggler'
+//import ThemeToggler from 'components/ThemeToggler'
 import { EtherscanLink } from 'components/EtherscanLink'
 
 // Hooks
@@ -127,7 +127,6 @@ const LinkWrapper = styled(EtherscanLink)`
 `
 
 const VerifiedText = 'View verified contract'
-const APP_NAME_ABOUT = CONFIG.name.length < 5 ? ' ' + CONFIG.name : ''
 
 const Footer: React.FC = () => {
   const { networkIdOrDefault: networkId } = useWalletConnection()
@@ -135,12 +134,9 @@ const Footer: React.FC = () => {
 
   return (
     <Wrapper>
-      {/* DARK/LIGHT MODE TOGGLER */}
-      <ThemeToggler />
       {/* LINKS */}
       <FooterLinks>
-        <Link to="/about">About{APP_NAME_ABOUT}</Link>
-        <Link to="/faq">FAQ</Link>
+        <Link to="https://diadata.org/FIXME">FAQ</Link>
       </FooterLinks>
       {/* VERSION */}
       <div className="version">
