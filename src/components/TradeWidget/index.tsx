@@ -205,7 +205,7 @@ const WarningLabel = styled.code`
 `
 
 const SubmitButton = styled.button`
-  background-color: var(--color-background-CTA);
+  background-color: #ff7096;
   color: var(--color-text-CTA);
   border-radius: 3rem;
   font-family: var(--font-default);
