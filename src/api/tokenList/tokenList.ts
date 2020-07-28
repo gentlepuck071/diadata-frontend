@@ -2,7 +2,7 @@ import { TokenDetails, Network } from 'types'
 import { DEFAULT_PRECISION } from 'const'
 
 import { getImageUrl } from 'utils'
-import { tokenList } from '@gnosis.pm/dex-js'
+import { tokenList } from '@diadata.org/dex-js-1'
 
 export function getTokensByNetwork(networkId: number): TokenDetails[] {
   // Return token details

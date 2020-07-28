@@ -5,7 +5,7 @@ import TokenImg from 'components/TokenImg'
 import checkIcon from 'assets/img/li-check.svg'
 
 // types
-import { TokenDetails } from '@gnosis.pm/dex-js'
+import { TokenDetails } from '@diadata.org/dex-js-1'
 
 // PoolingWidget: subcomponent
 import { ProgressStepText } from 'components/PoolingWidget/PoolingWidget.styled'

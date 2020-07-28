@@ -1,4 +1,4 @@
-import { TokenDetails } from '@gnosis.pm/dex-js'
+import { TokenDetails } from '@diadata.org/dex-js-1'
 import { Actions } from 'reducers-actions'
 
 export interface TradeState {

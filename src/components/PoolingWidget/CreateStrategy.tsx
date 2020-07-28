@@ -1,5 +1,5 @@
 import React from 'react'
-import { TokenDetails } from '@gnosis.pm/dex-js'
+import { TokenDetails } from '@diadata.org/dex-js-1'
 
 // types, util, const
 import { Receipt } from 'types'

@@ -3,7 +3,8 @@ import styled from 'styled-components'
 import { useFormContext } from 'react-hook-form'
 import BigNumber from 'bignumber.js'
 
-import { TokenDetails, invertPrice, safeTokenName } from '@gnosis.pm/dex-js'
+import { invertPrice } from '@gnosis.pm/dex-js'
+import { TokenDetails, safeTokenName } from '@diadata.org/dex-js-1'
 
 import { usePriceEstimationWithSlippage } from 'hooks/usePriceEstimation'
 

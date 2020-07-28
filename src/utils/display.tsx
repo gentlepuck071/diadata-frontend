@@ -1,5 +1,5 @@
 import React from 'react'
-import { TokenDetails, safeTokenName } from '@gnosis.pm/dex-js'
+import { TokenDetails, safeTokenName } from '@diadata.org/dex-js-1'
 import { EtherscanLink } from 'components/EtherscanLink'
 
 export function displayTokenSymbolOrLink(token: TokenDetails): React.ReactNode | string {

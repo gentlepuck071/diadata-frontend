@@ -9,7 +9,7 @@ import joi from '@hapi/joi'
 // const, type, utils
 import { DEFAULT_PRECISION, LIQUIDITY_TOKEN_LIST, INPUT_PRECISION_SIZE } from 'const'
 import { Receipt } from 'types'
-import { TokenDetails, ZERO } from '@gnosis.pm/dex-js'
+import { TokenDetails, ZERO } from '@diadata.org/dex-js-1'
 import { maxAmountsForSpread, resolverFactory, NUMBER_VALIDATION_KEYS } from 'utils'
 
 // components

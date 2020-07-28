@@ -2,7 +2,7 @@ import React from 'react'
 
 // types
 import { Receipt } from 'types'
-import { TokenDetails } from '@gnosis.pm/dex-js'
+import { TokenDetails } from '@diadata.org/dex-js-1'
 
 // PoolingWidget: subcomponents
 import TokenSelector from 'components/PoolingWidget/TokenSelector'
