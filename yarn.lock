@@ -988,6 +988,12 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
+"@diadata.org/dex-js-1@file:../dex-js-1":
+  version "0.4.1"
+  dependencies:
+    "@gnosis.pm/dex-contracts" "^0.2.0"
+    bignumber.js "^9.0.0"
+
 "@emotion/cache@^10.0.27", "@emotion/cache@^10.0.9":
   version "10.0.29"
   resolved "https://registry.yarnpkg.com/@emotion/cache/-/cache-10.0.29.tgz#87e7e64f412c060102d589fe7c6dc042e6f9d1e0"
@@ -1264,14 +1270,6 @@
   integrity sha512-rvGuiHfl12F70qBiJimUv/uGdn5+Dfao2xAbhiQh9/wJBt5A5nVYONnZ13JFfIoOrSJTRT1n61SEhLfLOlG6dw==
   dependencies:
     bn.js "^5.1.1"
-
-"@gnosis.pm/dex-js@^0.4.1":
-  version "0.4.1"
-  resolved "https://registry.yarnpkg.com/@gnosis.pm/dex-js/-/dex-js-0.4.1.tgz#8cff7b54fd7b1312441e117597536b6557e0b84f"
-  integrity sha512-VcS0zPeS7L3z4PgsxfRjv0LIpV76o4zW2krnYTZNGTT+kT5wftJt7m45OCD6u+RxrwNNqWep6akC3CKO0b20CQ==
-  dependencies:
-    "@gnosis.pm/dex-contracts" "^0.2.0"
-    bignumber.js "^9.0.0"
 
 "@hapi/address@^4.0.1":
   version "4.0.1"

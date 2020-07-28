@@ -111,7 +111,7 @@ const App: React.FC = () => (
             <Route path="/connect-wallet" exact component={ConnectWallet} />
             <Route path="/trades" exact component={Trades} />
             <Route path="/settings" exact component={Settings} />
-            <Redirect from="/" to="/trade/DAI-USDC?sell=0&price=0" />
+            <Redirect from="/" to="/trade/USDC-DIA?sell=0&price=0" />
             <Route component={NotFound} />
           </Switch>
         </React.Suspense>

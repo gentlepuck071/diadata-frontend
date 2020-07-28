@@ -1,6 +1,6 @@
 name: DIA Token Sale
 
-logoPath: './src/assets/img/logo.svg'
+logoPath: './src/assets/img/logo.png'
 
 templatePath: './src/html/index.html'
 

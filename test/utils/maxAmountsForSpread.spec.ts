@@ -1,7 +1,7 @@
 import BN from 'bn.js'
 import BigNumber from 'bignumber.js'
 
-import { UNLIMITED_ORDER_AMOUNT } from '@gnosis.pm/dex-js'
+import { UNLIMITED_ORDER_AMOUNT } from '@diadata.org/dex-js-1'
 import { maxAmountsForSpread } from 'utils'
 
 function assertSpread(

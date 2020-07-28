@@ -9,7 +9,7 @@ import Modali from 'modali'
 import BN from 'bn.js'
 import { isAddress } from 'web3-utils'
 
-import { encodeTokenSymbol, decodeSymbol } from '@gnosis.pm/dex-js'
+import { encodeTokenSymbol, decodeSymbol } from '@diadata.org/dex-js-1'
 
 // assets
 import { SwitcherSVG } from 'assets/img/SVG'
@@ -450,7 +450,7 @@ interface ChooseTokenInput {
   tokens: TokenDetails[]
   token: TokenDetails | null
   tokenSymbolFromUrl?: string
-  defaultTokenSymbol: 'DAI' | 'USDC'
+  defaultTokenSymbol: 'USDC' | 'DIA'
 }
 
 const chooseTokenWithFallback = ({
@@ -546,7 +546,7 @@ const TradeWidget: React.FC = () => {
       token: trade.sellToken,
       tokens,
       tokenSymbolFromUrl: sellTokenSymbol,
-      defaultTokenSymbol: 'DAI',
+      defaultTokenSymbol: 'USDC',
     }),
   )
   const [receiveToken, setReceiveToken] = useState(() =>
@@ -554,7 +554,7 @@ const TradeWidget: React.FC = () => {
       token: trade.buyToken,
       tokens,
       tokenSymbolFromUrl: receiveTokenSymbol,
-      defaultTokenSymbol: 'USDC',
+      defaultTokenSymbol: 'DIA',
     }),
   )
 
@@ -571,7 +571,7 @@ const TradeWidget: React.FC = () => {
           : null,
         tokens: tokenListApi.getTokens(networkIdOrDefault), // get immediate new tokens
         tokenSymbolFromUrl: sellTokenSymbol, // from url params
-        defaultTokenSymbol: 'DAI', // default sellToken
+        defaultTokenSymbol: 'USDC', // default sellToken
       })
       setSellToken(sellTokenOrFallback)
     }
@@ -583,7 +583,7 @@ const TradeWidget: React.FC = () => {
           : null,
         tokens: tokenListApi.getTokens(networkIdOrDefault),
         tokenSymbolFromUrl: receiveTokenSymbol,
-        defaultTokenSymbol: 'USDC', // default buyToken
+        defaultTokenSymbol: 'DIA', // default buyToken
       })
       setReceiveToken(buyTokenOrFallback)
     }

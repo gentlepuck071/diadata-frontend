@@ -1,7 +1,7 @@
 import BN from 'bn.js'
 import { addDays, addMinutes } from 'date-fns'
 
-import { UNLIMITED_ORDER_AMOUNT, MAX_BATCH_ID } from '@gnosis.pm/dex-js'
+import { UNLIMITED_ORDER_AMOUNT, MAX_BATCH_ID } from '@diadata.org/dex-js-1'
 
 import { dateToBatchId } from 'utils'
 
