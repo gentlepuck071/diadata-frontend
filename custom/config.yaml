@@ -4,13 +4,15 @@ logoPath: './src/assets/img/logo.png'
 
 templatePath: './src/html/index.html'
 
+appId: 03
+
 tcr:
   type: 'multi-tcr' # choices: multi-tcr | none
   config:
     lists:
       - networkId: 1
         listId: 1
-        contractAddress: '0x1854dae560abb0f399d8badca456663ca5c309d0'
+        contractAddress: '0x14a588f15a043913b30c19a80049876e4a21fafb'
 
       - networkId: 4
         listId: 1
@@ -63,3 +65,7 @@ exchangeContractConfig:
 # Wallet Connect
 walletConnect:
   bridge: 'wss://safe-walletconnect.gnosis.io/'
+
+disabledTokens:
+  1:
+    - address: '0x056fd409e1d7a124bd7017459dfea2f387b6d5cd'

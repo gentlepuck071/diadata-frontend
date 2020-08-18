@@ -89,7 +89,7 @@ disabledTokens:
       description: This token is disabled for trading and depositing. SNX will be deprecated and replaced by another token at the end of July 2020.  Go to https://www.synthetix.io for more information
       reason: DEPRECATED
       url: https://docs.synthetix.io/integrations/guide/#proxy-deprecation
-      
+
     - address: '0x45804880De22913dAFE09f4980848ECE6EcbAf78'
       name: Paxos Gold
       symbol: PAXG

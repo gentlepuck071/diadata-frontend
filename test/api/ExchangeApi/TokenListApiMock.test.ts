@@ -55,9 +55,9 @@ describe('MOCK: Basic functions', () => {
 })
 
 describe('REAL: Basic functions', () => {
-  test('API Token list has length 17', () => {
+  test('API Token list has length 18', () => {
     const tokens = instanceReal.getTokens(1)
-    expect(tokens.length).toBe(17)
+    expect(tokens.length).toBe(18)
   })
   test('API Token list has expected token', () => {
     const tokens = instanceReal.getTokens(1)

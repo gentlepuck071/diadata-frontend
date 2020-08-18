@@ -36,7 +36,7 @@ const TooltipArrow = styled.div<{ $bgColor?: string }>`
 
 const TooltipInner = styled.div<{ $bgColor?: string }>`
   background: ${({ $bgColor = 'var(--color-background-nav-active)' }): string => $bgColor};
-  color: var(--color-text-primary);
+  color: var(--color-text-selectedbutton);
   font-weight: var(--font-weight-normal);
   padding: 0.8rem 1rem;
   font-size: 1.2rem;

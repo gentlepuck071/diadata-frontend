@@ -1,6 +1,5 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'react-router-dom'
 
 import { MEDIA } from 'const'
 import { depositApi } from 'api'
@@ -136,7 +135,13 @@ const Footer: React.FC = () => {
     <Wrapper>
       {/* LINKS */}
       <FooterLinks>
-        <Link to="https://diadata.org/FIXME">FAQ</Link>
+        <a 
+          target="_blank"
+          rel="noopener noreferrer" 
+          href={'https://medium.com/dia-insights/bonding-curve-distribution-faq-d07bd045d450'}
+        >
+        FAQ
+        </a>
       </FooterLinks>
       {/* VERSION */}
       <div className="version">
